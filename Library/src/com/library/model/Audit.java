@@ -4,9 +4,9 @@ import java.util.Date;
 
 public class Audit {
 	private int id;
-	private int checkoutId;
-	private Date startDate;
-	private Date endDate;
+	private int customerId;
+	private Date checkoutDate;
+	private Date returnDate;
 	private int bookId;
 	public int getId() {
 		return id;
@@ -14,23 +14,23 @@ public class Audit {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public int getCheckoutId() {
-		return checkoutId;
+	public int getCustomerId() {
+		return customerId;
 	}
-	public void setCheckoutId(int checkoutId) {
-		this.checkoutId = checkoutId;
+	public void setCustomerId(int customerId) {
+		this.customerId = customerId;
 	}
-	public Date getStartDate() {
-		return startDate;
+	public Date getCheckoutDate() {
+		return checkoutDate;
 	}
-	public void setStartDate(Date startDate) {
-		this.startDate = startDate;
+	public void setCheckoutDate(Date checkoutDate) {
+		this.checkoutDate = checkoutDate;
 	}
-	public Date getEndDate() {
-		return endDate;
+	public Date getReturnDate() {
+		return returnDate;
 	}
-	public void setEndDate(Date endDate) {
-		this.endDate = endDate;
+	public void setReturnDate(Date returnDate) {
+		this.returnDate = returnDate;
 	}
 	public int getBookId() {
 		return bookId;
@@ -38,6 +38,4 @@ public class Audit {
 	public void setBookId(int bookId) {
 		this.bookId = bookId;
 	}
-	
-	
 }
