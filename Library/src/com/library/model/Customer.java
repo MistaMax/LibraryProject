@@ -5,6 +5,17 @@ public class Customer {
 	private String name;
 	private String userName;
 	private String passwordHash;
+	
+	public Customer() {
+		super();
+	}
+	public Customer(int id, String name, String userName, String passwordHash) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.userName = userName;
+		this.passwordHash = passwordHash;
+	}
 	public int getId() {
 		return id;
 	}

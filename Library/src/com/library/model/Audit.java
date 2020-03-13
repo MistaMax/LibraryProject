@@ -8,6 +8,20 @@ public class Audit {
 	private Date checkoutDate;
 	private Date returnDate;
 	private int bookId;
+	
+	public Audit() {
+		super();
+	}
+	
+	public Audit(int id, int customerId, Date checkoutDate, Date returnDate, int bookId) {
+		super();
+		this.id = id;
+		this.customerId = customerId;
+		this.checkoutDate = checkoutDate;
+		this.returnDate = returnDate;
+		this.bookId = bookId;
+	}
+	
 	public int getId() {
 		return id;
 	}

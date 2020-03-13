@@ -5,6 +5,17 @@ public class Book {
 	private String title;
 	private int authorId;
 
+	public Book() {
+		super();
+	}
+
+	public Book(int id, String title, int authorId) {
+		super();
+		this.id = id;
+		this.title = title;
+		this.authorId = authorId;
+	}
+
 	public int getId() {
 		return id;
 	}
