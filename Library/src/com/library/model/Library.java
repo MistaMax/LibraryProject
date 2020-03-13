@@ -1,15 +1,28 @@
 package com.library.model;
 
-import com.library.DAO.AuditDAO;
-import com.library.DAO.BookDAO;
-import com.library.DAO.CustomerDAO;
-import com.library.DAO.EmployeeDAO;
-
 public class Library {
 	private String name;
 	private String location;
-	private EmployeeDAO employeeDAO;
-	private BookDAO bookDAO;
-	private CustomerDAO custDAO;
-	private AuditDAO auditDAO;
+	
+	public Library() {
+		super();
+	}
+	public Library(String name, String location) {
+		super();
+		this.name = name;
+		this.location = location;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getLocation() {
+		return location;
+	}
+	public void setLocation(String location) {
+		this.location = location;
+	}
+	
 }

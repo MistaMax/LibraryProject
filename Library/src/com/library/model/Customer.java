@@ -2,40 +2,43 @@ package com.library.model;
 
 public class Customer {
 	private int id;
-	private String fName;
-	private String lName;
+	private String name;
 	private String userName;
-
+	private String passwordHash;
+	
+	public Customer() {
+		super();
+	}
+	public Customer(int id, String name, String userName, String passwordHash) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.userName = userName;
+		this.passwordHash = passwordHash;
+	}
 	public int getId() {
 		return id;
 	}
-
 	public void setId(int id) {
 		this.id = id;
 	}
-
-	public String getfName() {
-		return fName;
+	public String getName() {
+		return name;
 	}
-
-	public void setfName(String fName) {
-		this.fName = fName;
+	public void setName(String name) {
+		this.name = name;
 	}
-
-	public String getlName() {
-		return lName;
-	}
-
-	public void setlName(String lName) {
-		this.lName = lName;
-	}
-
 	public String getUserName() {
 		return userName;
 	}
-
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
-
+	public String getPasswordHash() {
+		return passwordHash;
+	}
+	public void setPasswordHash(String passwordHash) {
+		this.passwordHash = passwordHash;
+	}
+	
 }
